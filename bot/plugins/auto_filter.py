@@ -15,8 +15,7 @@ INVITE_LINK = {}
 ACTIVE_CHATS = {}
 db = Database()
 
-@Bot.on_message(filters.text & filters.group & ~filters.edited, group=0)
-async def auto_filter(bot: Client, update: Message):
+
     """
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
